@@ -1,6 +1,9 @@
-package Carte;
+package models;
 
-public class Paragraph implements Element{
+import models.Element;
+import services.AlignStrategy;
+
+public class Paragraph implements Element {
     private String text;
     private AlignStrategy textAlignment;
 
@@ -14,7 +17,7 @@ public class Paragraph implements Element{
             textAlignment.render(text);
         }
         else {
-            System.out.println("Paragraph: " + text + " ");
+            System.out.println("models.Paragraph: " + text + " ");
         }
     }
 
@@ -31,6 +34,11 @@ public class Paragraph implements Element{
     @Override
     public Element get(int index) {
         return null;
+    }
+
+    @Override
+    public void accept(Visitor visitor) {
+        visitor.visitParagraph(this);
     }
 
     public void setAlignStrategy(AlignStrategy strategy){

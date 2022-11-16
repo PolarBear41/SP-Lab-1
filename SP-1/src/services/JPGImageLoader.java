@@ -1,4 +1,4 @@
-package Carte;
+package services;
 
 public class JPGImageLoader implements ImageLoader{
     @Override

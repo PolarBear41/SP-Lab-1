@@ -1,10 +1,9 @@
-package Carte;
+package models;
 
-import java.util.List;
-
-interface Element {
+public interface Element {
     public void print();
     public void add(Element element);
     public void remove(Element element);
     public Element get(int index);
+    public void accept(Visitor visitor);
 }

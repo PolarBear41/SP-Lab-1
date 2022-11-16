@@ -1,4 +1,4 @@
-package Carte;
+package models;
 
 import java.awt.*;
 
