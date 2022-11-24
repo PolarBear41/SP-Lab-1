@@ -23,5 +23,6 @@ public class main {
         cap1.accept(v);
         cap1.add(v.getTableOfContents());
         cap1.print();
+        
     }
 }

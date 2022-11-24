@@ -62,4 +62,5 @@ public class Image implements Element, Picture{
     public String content() {
         return  ImageContent;
     }
+    
 }

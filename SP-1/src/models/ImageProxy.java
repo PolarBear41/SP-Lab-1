@@ -68,4 +68,5 @@ public class ImageProxy implements Element, Picture {
 
         return realImage;
     }
+    
 }

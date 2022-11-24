@@ -34,4 +34,5 @@ public class Table implements Element{
     public void accept(Visitor visitor) {
         visitor.visitTable(this);
     }
+    
 }
